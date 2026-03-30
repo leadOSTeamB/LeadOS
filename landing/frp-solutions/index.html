@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRP Solutions — Transform Your Fibre Raw Material Experience</title>
+  <meta name="description" content="FRP Solutions provides top-tier fibre raw materials designed to enhance your production processes. Our products are tailored to meet the diverse needs of fibre users, ensuring quality and reliability in every batch.">
+  <meta property="og:title" content="FRP Solutions — Transform Your Fibre Raw Material Experience">
+  <meta property="og:description" content="FRP Solutions provides top-tier fibre raw materials designed to enhance your production processes. Our products are tailored to meet the diverse needs of fibre users, ensuring quality and reliability in every batch.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1D4ED8',
+            secondary: '#1E40AF',
+            accent: '#3B82F6',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #1F2937; background: #FFFFFF; }
+    h1, h2, h3, h4 { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-btn { background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%); }
+    .gradient-btn:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 10px 25px -5px #1D4ED840; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer.open { max-height: 500px; }
+    
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+</head>
+<body class="antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50" style="background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #E5E7EB;"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex items-center gap-3"><a href="#" class="text-lg font-bold" style="color: #1F2937;">FRP Solutions</a></div><div class="hidden md:flex items-center gap-6"><a href="#features" class="text-sm font-medium transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.color='#1F2937'" onmouseout="this.style.color='#4B5563'">Features</a><a href="#offer" class="text-sm font-medium transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.color='#1F2937'" onmouseout="this.style.color='#4B5563'">Offer</a><a href="#pricing" class="text-sm font-medium transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.color='#1F2937'" onmouseout="this.style.color='#4B5563'">Pricing</a><a href="#testimonials" class="text-sm font-medium transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.color='#1F2937'" onmouseout="this.style.color='#4B5563'">Testimonials</a><a href="#faq" class="text-sm font-medium transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.color='#1F2937'" onmouseout="this.style.color='#4B5563'">FAQ</a><a href="#contact" class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg" style="background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%); border-radius: 12px;">Get Your Free Sample Today!</a></div><button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg transition-colors duration-200" style="color: #4B5563;" onclick="(function(){ var m=document.getElementById('mobile-menu'); var open=m.style.maxHeight && m.style.maxHeight!=='0px'; m.style.maxHeight=open?'0px':'400px'; m.style.opacity=open?'0':'1'; })()" aria-label="Toggle menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0; background: #FFFFFF; border-top: 1px solid #E5E7EB;"><div class="px-4 py-4 space-y-2"><a href="#features" class="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='transparent'">Features</a><a href="#offer" class="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='transparent'">Offer</a><a href="#pricing" class="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='transparent'">Pricing</a><a href="#testimonials" class="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='transparent'">Testimonials</a><a href="#faq" class="block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200" style="color: #4B5563;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='transparent'">FAQ</a><a href="#contact" class="block w-full text-center px-5 py-3 text-sm font-semibold text-white transition-all duration-200 mt-2" style="background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%); border-radius: 12px;">Get Your Free Sample Today!</a></div></div></nav>
+  <section class="relative pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden" style="background: linear-gradient(135deg, #1D4ED810 0%, #3B82F610 100%);"><div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#1F2937 1px, transparent 1px); background-size: 24px 24px;"></div><div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style="background: #FFFFFF; border: 1px solid #1D4ED822; box-shadow: 0 1px 3px rgba(0,0,0,0.06);"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background: #3B82F6;"></span><span class="relative inline-flex rounded-full h-2 w-2" style="background: #3B82F6;"></span></span><span class="text-sm font-medium" style="color: #1F2937; font-family: 'Inter', system-ui, sans-serif;">Over 300 companies trust FRP Solutions for their fibre needs.</span></div><h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6" style="color: #1F2937; font-family: 'Inter', system-ui, sans-serif;">Transform Your Fibre Raw Material Experience</h1><p class="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed" style="color: #1F2937; opacity: 0.7; font-family: 'Inter', system-ui, sans-serif;">Unlock the potential of high-quality fibre materials for your projects. Experience efficiency and sustainability like never before.</p><div class="flex justify-center mb-4"><a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4" style="background: #1D4ED8; border-radius: 12px; font-family: 'Inter', system-ui, sans-serif; box-shadow: 0 4px 14px #1D4ED840; focus-ring-color: #1D4ED833;">Get Your Free Sample Today!<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div><p class="text-sm mb-12" style="color: #1F2937; opacity: 0.4; font-family: 'Inter', system-ui, sans-serif;">No credit card required</p></div></section>
+  
+<section style="background:#F3F4F6;padding:5rem 1.5rem;">
+  <style>
+    .feat-a-card:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06) !important;
+    }
+    .feat-a-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (min-width: 640px) {
+      .feat-a-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .feat-a-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+
+  <div style="text-align:center;max-width:680px;margin:0 auto 3rem auto;">
+    <h2 style="
+      font-size:2.25rem;
+      font-weight:800;
+      color:#1F2937;
+      margin:0 0 0.75rem 0;
+      line-height:1.2;
+    ">Everything You Need</h2>
+    <p style="
+      font-size:1.1rem;
+      color:rgba(0,0,0,0.55);
+      margin:0;
+      line-height:1.6;
+    ">Powerful features designed to help you succeed.</p>
+  </div>
+
+  <div class="feat-a-grid">
+    
+      <div class="feat-a-card" style="
+        background:#ffffff;
+        border-radius:12px;
+        padding:2rem 1.75rem;
+        box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+        border:1px solid rgba(0,0,0,0.06);
+        transition:transform 0.25s ease, box-shadow 0.25s ease;
+        cursor:default;
+      ">
+        <div style="font-size:2.5rem;line-height:1;margin-bottom:1rem;">🌟</div>
+        <h3 style="
+          font-size:1.2rem;
+          font-weight:700;
+          color:#1F2937;
+          margin:0 0 0.5rem 0;
+          line-height:1.3;
+        ">High Quality</h3>
+        <p style="
+          font-size:0.95rem;
+          line-height:1.6;
+          color:rgba(0,0,0,0.55);
+          margin:0;
+        ">Our fibres are sourced from the best suppliers, ensuring superior quality.</p>
+      </div>
+
+      <div class="feat-a-card" style="
+        background:#ffffff;
+        border-radius:12px;
+        padding:2rem 1.75rem;
+        box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+        border:1px solid rgba(0,0,0,0.06);
+        transition:transform 0.25s ease, box-shadow 0.25s ease;
+        cursor:default;
+      ">
+        <div style="font-size:2.5rem;line-height:1;margin-bottom:1rem;">♻️</div>
+        <h3 style="
+          font-size:1.2rem;
+          font-weight:700;
+          color:#1F2937;
+          margin:0 0 0.5rem 0;
+          line-height:1.3;
+        ">Sustainable Sourcing</h3>
+        <p style="
+          font-size:0.95rem;
+          line-height:1.6;
+          color:rgba(0,0,0,0.55);
+          margin:0;
+        ">We prioritize eco-friendly practices in our sourcing and production.</p>
+      </div>
+
+      <div class="feat-a-card" style="
+        background:#ffffff;
+        border-radius:12px;
+        padding:2rem 1.75rem;
+        box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+        border:1px solid rgba(0,0,0,0.06);
+        transition:transform 0.25s ease, box-shadow 0.25s ease;
+        cursor:default;
+      ">
+        <div style="font-size:2.5rem;line-height:1;margin-bottom:1rem;">🛠️</div>
+        <h3 style="
+          font-size:1.2rem;
+          font-weight:700;
+          color:#1F2937;
+          margin:0 0 0.5rem 0;
+          line-height:1.3;
+        ">Custom Solutions</h3>
+        <p style="
+          font-size:0.95rem;
+          line-height:1.6;
+          color:rgba(0,0,0,0.55);
+          margin:0;
+        ">Tailored fibre solutions to meet your specific project requirements.</p>
+      </div>
+
+      <div class="feat-a-card" style="
+        background:#ffffff;
+        border-radius:12px;
+        padding:2rem 1.75rem;
+        box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+        border:1px solid rgba(0,0,0,0.06);
+        transition:transform 0.25s ease, box-shadow 0.25s ease;
+        cursor:default;
+      ">
+        <div style="font-size:2.5rem;line-height:1;margin-bottom:1rem;">👩‍🔧</div>
+        <h3 style="
+          font-size:1.2rem;
+          font-weight:700;
+          color:#1F2937;
+          margin:0 0 0.5rem 0;
+          line-height:1.3;
+        ">Expert Support</h3>
+        <p style="
+          font-size:0.95rem;
+          line-height:1.6;
+          color:rgba(0,0,0,0.55);
+          margin:0;
+        ">Our team of experts is here to assist you with any inquiries.</p>
+      </div>
+  </div>
+</section>
+  
+  <section id="offer" class="py-16 md:py-24" style="background: #F3F4F6;"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"><div class="overflow-hidden" style="border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);"><div class="px-8 py-8 sm:px-10 sm:py-10 text-center" style="background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);"><h2 class="text-3xl sm:text-4xl font-bold mb-2" style="color: #FFFFFF;">Here's What You Get</h2><p class="text-base opacity-90" style="color: #FFFFFF;">Everything included in our offer</p></div><div class="px-8 py-8 sm:px-10 sm:py-10" style="background: #FFFFFF;"><div class="mb-8"><p class="text-base leading-relaxed whitespace-pre-line" style="color: #4B5563;">Receive a complimentary sample of our premium fibre materials with your first inquiry.</p></div><div class="rounded-lg p-6 mb-8 text-center" style="background: #F0F4FF; border: 2px solid #1D4ED833; border-radius: 12px;"><p class="text-sm font-medium uppercase tracking-wider mb-2" style="color: #1D4ED8;">Investment</p><p class="text-2xl sm:text-3xl font-bold" style="color: #1F2937;">Pricing varies based on the type and quantity of fibres ordered; contact us for a quote.</p></div><div class="flex items-start gap-4 rounded-lg p-5" style="background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 12px;"><span class="text-3xl flex-shrink-0">&#128737;&#65039;</span><div><h4 class="font-bold text-sm mb-1" style="color: #1F2937;">Our Guarantee</h4><p class="text-sm leading-relaxed" style="color: #4B5563;">100% satisfaction guarantee on all our products.</p></div></div></div></div></div></section>
+  
+  <section class="py-16 sm:py-24 px-4" style="background:#F3F4F6;">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-gray-900 text-3xl sm:text-4xl font-bold text-center mb-4">What Our Clients Say</h2>
+      <div class="w-16 h-1 mx-auto rounded-full mb-12" style="background:#1D4ED8;"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+      <div class="group flex flex-col justify-between p-6 sm:p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+           style="background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);">
+        <!-- Stars -->
+        <div>
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg>
+          </div>
+          <!-- Quote -->
+          <p class="text-gray-700 italic text-base leading-relaxed mb-6">&ldquo;FRP Solutions has transformed our production efficiency with their high-quality fibres!&rdquo;</p>
+        </div>
+        <!-- Author -->
+        <div class="flex items-center gap-3 mt-auto pt-4 border-t" style="border-color:rgba(0,0,0,0.08);">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+               style="background:#1D4ED8;">
+            J
+          </div>
+          <div>
+            <p class="text-gray-900 font-semibold text-sm">Jane Doe</p>
+            <p class="text-gray-500 text-xs">Product Manager, EcoFibre Corp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group flex flex-col justify-between p-6 sm:p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+           style="background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);">
+        <!-- Stars -->
+        <div>
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg><svg class="w-5 h-5" fill="#f59e0b" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z"/></svg>
+          </div>
+          <!-- Quote -->
+          <p class="text-gray-700 italic text-base leading-relaxed mb-6">&ldquo;The sustainability focus of FRP Solutions aligns perfectly with our company values.&rdquo;</p>
+        </div>
+        <!-- Author -->
+        <div class="flex items-center gap-3 mt-auto pt-4 border-t" style="border-color:rgba(0,0,0,0.08);">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+               style="background:#1D4ED8;">
+            J
+          </div>
+          <div>
+            <p class="text-gray-900 font-semibold text-sm">John Smith</p>
+            <p class="text-gray-500 text-xs">CEO, Green Materials Inc.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+    <section id="pricing" class="py-16 sm:py-24 px-4" style="background:#FFFFFF;">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-gray-900 text-3xl sm:text-4xl font-bold mb-4">Simple Pricing</h2>
+        <div class="w-16 h-1 mx-auto rounded-full mb-12" style="background:#1D4ED8;"></div>
+        <div class="rounded-2xl overflow-hidden shadow-lg" style="border:1px solid rgba(0,0,0,0.08);">
+          <div class="py-6 px-8" style="background:linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);">
+            <h3 class="text-white text-xl font-bold">Pricing</h3>
+          </div>
+          <div class="p-8 sm:p-10" style="background:#FFFFFF;">
+            <p class="text-gray-600 text-lg leading-relaxed whitespace-pre-line">Pricing varies based on the type and quantity of fibres ordered; contact us for a quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="faq" class="py-16 md:py-24" style="background: #F3F4F6;"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-12"><h2 class="text-3xl sm:text-4xl font-bold mb-3" style="color: #1F2937;">Frequently Asked Questions</h2><p class="text-lg" style="color: #6B7280;">Everything you need to know, answered.</p></div><div class="space-y-4"><div class="rounded-lg overflow-hidden" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px;"><button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left transition-colors duration-200 focus:outline-none" style="color: #1F2937;" onclick="(function(btn){ var ans=btn.nextElementSibling; var icon=btn.querySelector('.faq-icon'); var open=ans.style.maxHeight && ans.style.maxHeight!=='0px'; ans.style.maxHeight=open?'0px':(ans.scrollHeight+'px'); icon.textContent=open?'+':'−'; })(this)" aria-expanded="false"><span class="font-semibold text-base pr-4">What types of fibres do you offer?</span><span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold" style="background: #1D4ED812; color: #1D4ED8;">+</span></button><div class="faq-answer transition-all duration-300 ease-in-out" style="max-height: 0px; overflow: hidden;"><div class="px-6 pb-5 text-sm leading-relaxed" style="color: #4B5563; border-top: 1px solid #E5E7EB; padding-top: 1rem;">We offer a wide range of fibres including natural, synthetic, and blended options.</div></div></div><div class="rounded-lg overflow-hidden" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px;"><button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left transition-colors duration-200 focus:outline-none" style="color: #1F2937;" onclick="(function(btn){ var ans=btn.nextElementSibling; var icon=btn.querySelector('.faq-icon'); var open=ans.style.maxHeight && ans.style.maxHeight!=='0px'; ans.style.maxHeight=open?'0px':(ans.scrollHeight+'px'); icon.textContent=open?'+':'−'; })(this)" aria-expanded="false"><span class="font-semibold text-base pr-4">How can I place an order?</span><span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold" style="background: #1D4ED812; color: #1D4ED8;">+</span></button><div class="faq-answer transition-all duration-300 ease-in-out" style="max-height: 0px; overflow: hidden;"><div class="px-6 pb-5 text-sm leading-relaxed" style="color: #4B5563; border-top: 1px solid #E5E7EB; padding-top: 1rem;">You can place an order directly through our website or contact our sales team for assistance.</div></div></div><div class="rounded-lg overflow-hidden" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px;"><button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left transition-colors duration-200 focus:outline-none" style="color: #1F2937;" onclick="(function(btn){ var ans=btn.nextElementSibling; var icon=btn.querySelector('.faq-icon'); var open=ans.style.maxHeight && ans.style.maxHeight!=='0px'; ans.style.maxHeight=open?'0px':(ans.scrollHeight+'px'); icon.textContent=open?'+':'−'; })(this)" aria-expanded="false"><span class="font-semibold text-base pr-4">Do you offer bulk discounts?</span><span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold" style="background: #1D4ED812; color: #1D4ED8;">+</span></button><div class="faq-answer transition-all duration-300 ease-in-out" style="max-height: 0px; overflow: hidden;"><div class="px-6 pb-5 text-sm leading-relaxed" style="color: #4B5563; border-top: 1px solid #E5E7EB; padding-top: 1rem;">Yes, we provide competitive pricing and discounts for bulk orders.</div></div></div></div></div></section>
+  <section id="contact" class="py-16 md:py-24" style="background: #F3F4F6;"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-12"><h2 class="text-3xl sm:text-4xl font-bold mb-3" style="color: #1F2937;">Get Started Today</h2><p class="text-lg" style="color: #6B7280;">Take the first step towards transforming your business.</p></div><div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-start"><div class="rounded-xl p-8" style="background: #FFFFFF; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid #E5E7EB; border-radius: 12px;"><h3 class="text-xl font-semibold mb-6" style="color: #1F2937;">Fill in your details</h3><form id="lead-form" class="space-y-5"><input type="hidden" name="hubspot_company_id" value="315826926302" /><div><label for="field-name" class="block text-sm font-medium mb-1.5" style="color: #374151;">Name</label><input type="text" id="field-name" name="name" required class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background: #F9FAFB; border: 1px solid #D1D5DB; border-radius: 12px; color: #1F2937;" placeholder="Enter your name" /></div><div><label for="field-email" class="block text-sm font-medium mb-1.5" style="color: #374151;">Email</label><input type="email" id="field-email" name="email" required class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background: #F9FAFB; border: 1px solid #D1D5DB; border-radius: 12px; color: #1F2937;" placeholder="Enter your email" /></div><div><label for="field-phone" class="block text-sm font-medium mb-1.5" style="color: #374151;">Phone</label><input type="tel" id="field-phone" name="phone" required class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background: #F9FAFB; border: 1px solid #D1D5DB; border-radius: 12px; color: #1F2937;" placeholder="Enter your phone" /></div><div class="pt-2"><button type="submit" class="w-full px-6 py-3.5 text-white font-semibold text-lg transition-all duration-200 hover:opacity-90 hover:shadow-lg focus:outline-none focus:ring-4" style="background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%); border-radius: 12px; box-shadow: 0 4px 14px #1D4ED840;">Get Your Free Sample Today!</button></div></form><p class="text-center text-xs mt-4" style="color: #6B7280;">&#128274; Your information is 100% secure and will never be shared.</p></div><div class="space-y-6"><div class="rounded-xl p-8" style="background: #F0F4FF; border-radius: 12px;"><h3 class="text-xl font-bold mb-5" style="color: #1F2937;">Why Choose FRP Solutions?</h3><ul class="space-y-4"><li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="#1D4ED8" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-sm" style="color: #4B5563;">Proven results backed by real data</span></li><li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="#1D4ED8" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-sm" style="color: #4B5563;">Expert team with years of experience</span></li><li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="#1D4ED8" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-sm" style="color: #4B5563;">Fast turnaround &amp; dedicated support</span></li><li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="#1D4ED8" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-sm" style="color: #4B5563;">No long-term contracts required</span></li></ul></div><div class="rounded-xl p-6 flex items-center gap-4" style="background: #FFFFFF; border: 2px solid #1D4ED822; border-radius: 12px;"><div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-2xl" style="background: #1D4ED815;">&#128737;</div><div><h4 class="font-bold text-sm" style="color: #1F2937;">100% Satisfaction Guaranteed</h4><p class="text-xs mt-1" style="color: #6B7280;">We stand behind our work. If you're not satisfied, we'll make it right.</p></div></div><div class="rounded-xl p-6" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px;"><h4 class="font-bold text-sm mb-3" style="color: #1F2937;">Need help? Contact us directly</h4><div class="space-y-2 text-sm" style="color: #6B7280;"><p class="flex items-center gap-2">&#9993; info@frpsolutions.com</p><p class="flex items-center gap-2">&#128222; (555) 123-4567</p></div></div></div></div></div></section>
+  <footer style="background: #111827;"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16"><div><p class="text-xl font-bold mb-3" style="color: #1D4ED8;">FRP Solutions</p><p class="text-sm leading-relaxed" style="color: #9CA3AF;">Delivering exceptional value and results for our clients. Your success is our mission.</p></div><div><h4 class="text-sm font-semibold uppercase tracking-wider mb-4" style="color: #F9FAFB;">Quick Links</h4><ul class="space-y-3"><li><a href="#features" class="text-sm transition-colors duration-200 hover:underline" style="color: #D1D5DB;" onmouseover="this.style.color='#1D4ED8'" onmouseout="this.style.color='#D1D5DB'">Features</a></li><li><a href="#pricing" class="text-sm transition-colors duration-200 hover:underline" style="color: #D1D5DB;" onmouseover="this.style.color='#1D4ED8'" onmouseout="this.style.color='#D1D5DB'">Pricing</a></li><li><a href="#faq" class="text-sm transition-colors duration-200 hover:underline" style="color: #D1D5DB;" onmouseover="this.style.color='#1D4ED8'" onmouseout="this.style.color='#D1D5DB'">FAQ</a></li><li><a href="#contact" class="text-sm transition-colors duration-200 hover:underline" style="color: #D1D5DB;" onmouseover="this.style.color='#1D4ED8'" onmouseout="this.style.color='#D1D5DB'">Contact</a></li></ul></div><div><h4 class="text-sm font-semibold uppercase tracking-wider mb-4" style="color: #F9FAFB;">Contact</h4><div class="space-y-3 text-sm" style="color: #9CA3AF;"><p class="flex items-center gap-2">&#9993; info@frpsolutions.com</p><p class="flex items-center gap-2">&#128222; (555) 123-4567</p><p class="flex items-center gap-2">&#128205; 123 Business Ave, Suite 100</p></div></div></div><div class="mt-12 pt-8" style="border-top: 1px solid #374151;"><p class="text-center text-xs" style="color: #9CA3AF;">&copy; 2026 FRP Solutions. All rights reserved.</p></div></div></footer>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('open');
+        icon.textContent = answer.classList.contains('open') ? '\u2212' : '+';
+      });
+    });
+
+    // Form submission
+    document.getElementById('lead-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const res = await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...data, source: 'FRP Solutions Landing Page' }),
+        });
+
+        if (res.ok) {
+          e.target.innerHTML = '<div class="text-center py-8"><div class="text-4xl mb-4">\u2705</div><h3 class="text-2xl font-bold mb-2">Thank you!</h3><p style="color: #1F293780">We\'ll be in touch shortly.</p></div>';
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        alert('Something went wrong. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html>
