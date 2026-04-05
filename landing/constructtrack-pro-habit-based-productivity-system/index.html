@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstructTrack Pro: Save $10,000 Monthly on Construction Productivity</title>
+    <meta name="description" content="Transform job site chaos into measurable performance in 60 days with our habit-based productivity system for construction companies—guaranteed to save $5,000 or pay nothing.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --primary-glow: rgba(59,130,246,0.3);
+            --bg: #030712;
+            --bg-card: rgba(15,23,42,0.8);
+            --bg-section: #0f172a;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: rgba(148,163,184,0.1);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-lg: 16px;
+            --shadow: 0 10px 30px -5px rgba(2, 8, 23, 0.5);
+            --shadow-sm: 0 4px 6px -1px rgba(2, 8, 23, 0.1), 0 2px 4px -1px rgba(2, 8, 23, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(2, 8, 23, 0.5), 0 10px 10px -5px rgba(2, 8, 23, 0.04);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 14px 0 var(--primary-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 var(--primary-glow);
+        }
+
+        .btn-secondary {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn-lg {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-subtext {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 400;
+            margin-top: 0.25rem;
+            opacity: 0.8;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(3, 7, 18, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 180px 0 100px;
+            overflow: hidden;
+            background-color: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--primary-glow) 0%, rgba(3, 7, 18, 0) 70%);
+            opacity: 0.4;
+            filter: blur(40px);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--primary-glow) 0%, rgba(3, 7, 18, 0) 70%);
+            opacity: 0.3;
+            filter: blur(40px);
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(30px, 30px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+        }
+
+        .hero-form-container {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-form-title {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+            border-color: var(--primary);
+        }
+
+        .form-help-text {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .form-privacy {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background-color: var(--bg-section);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-headline {
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--text-muted);
+            font-size: 1.125rem;
+        }
+
+        /* Problem Section */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .problem-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .problem-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-title {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .bridge-text {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+
+        /* Solution Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-title {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* Social Proof Section */
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            font-family: serif;
+            color: var(--primary);
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .testimonial-quote {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+        }
+
+        .testimonial-role {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .testimonial-result {
+            margin-top: 0.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.highlighted {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px var(--primary-glow);
+        }
+
+        .pricing-card.highlighted::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .pricing-name {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+            color: var(--text);
+        }
+
+        .pricing-period {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .pricing-features {
+            margin-bottom: 2rem;
+        }
+
+        .pricing-feature {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .pricing-feature::before {
+            content: '✓';
+            color: var(--primary);
+            margin-right: 0.75rem;
+            font-weight: bold;
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid var(--success);
+            color: var(--success);
+            border-radius: 50px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .guarantee-card {
+            background: rgba(16, 185, 129, 0.05);
+            border-radius: var(--radius);
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .guarantee-icon {
+            font-size: 3rem;
+            color: var(--success);
+            margin-bottom: 1.5rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            text-align: center;
+            padding: 6rem 0;
+            background: linear-gradient(to bottom, var(--bg), var(--bg-section));
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            margin-bottom: 2.5rem;
+            font-size: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg);
+            padding: 3rem 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Calendly Section */
+        #calendly-section {
+            display: none;
+            padding: 2rem 0;
+        }
+
+        .calendly-inline-widget {
+            min-width: 320px;
+            height: 700px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero {
+                padding: 150px 0 80px;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .problem-grid,
+            .features-grid,
+            .testimonials-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                gap: 2rem;
+            }
+
+            .stat-item {
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .btn-lg {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .hero-form-container {
+                padding: 1.5rem;
+            }
+
+            .stat-item {
+                flex-basis: 100%;
+            }
+
+            .guarantee-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Construct<span>Track</span> Pro</a>
+                <a href="#lead-form" class="btn btn-primary">Schedule Your Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Stop Losing $10,000 Monthly to Invisible Productivity Issues</h1>
+                    <p>Transform Job Site Chaos into Measurable Performance in 60 Days — Guaranteed to Save You $5,000 or Pay Nothing</p>
+                    <a href="#lead-form" class="btn btn-primary btn-lg">
+                        Schedule Your Demo
+                        <span class="btn-subtext">No obligation. See how much you could save in 15 minutes.</span>
+                    </a>
+                </div>
+                <div class="hero-form-container fade-in" id="lead-form-container">
+                    <div class="hero-form-title">
+                        <h3>See How Much You Could Save</h3>
+                    </div>
+                    <form id="lead-form">
+                        <input type="hidden" name="hubspotCompanyId" value="">
+                        <input type="hidden" name="landingPage" value="/landing/constructtrack-pro-habit-based-productivity-system">
+                        <input type="hidden" name="source" value="landing-page">
+                        
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your first name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Your last name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Work Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="name@company.com" required>
+                            <span class="form-help-text">We'll send your productivity assessment results here</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567">
+                            <span class="form-help-text">For scheduling your demo (text/call)</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="companyName" class="form-label">Company Name</label>
+                            <input type="text" id="companyName" name="companyName" class="form-control" placeholder="Your construction company" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">Primary Project Type</label>
+                            <select id="projectType" name="projectType" class="form-control" required>
+                                <option value="" disabled selected>Select your main focus</option>
+                                <option value="Residential Construction">Residential Construction</option>
+                                <option value="Commercial Construction">Commercial Construction</option>
+                                <option value="Specialty Trade">Specialty Trade</option>
+                                <option value="General Contracting">General Contracting</option>
+                                <option value="Mixed Projects">Mixed Projects</option>
+                            </select>
+                            <span class="form-help-text">This helps us tailor your demo to your specific needs</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Schedule My Productivity Demo
+                            <span class="btn-subtext">See how to improve crew productivity in just 20 minutes</span>
+                        </button>
+                        
+                        <div class="form-privacy">
+                            We respect your privacy. Your information will never be shared or sold. Unsubscribe anytime.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendly Section (Hidden initially) -->
+    <section id="calendly-section" class="section">
+        <div class="container">
+            <div class="section-headline fade-in">
+                <h2>Your Demo is Almost Ready!</h2>
+                <p>Choose a time that works best for your schedule. Our productivity specialist will customize the demo for your specific project types.</p>
+            </div>
+            <div class="fade-in">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/your-team/consultation"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="section section-alt">
+        <div class="container">
+            <h3 class="section-title fade-in">Proven Results</h3>
+            <div class="stats-container">
+                <div class="stat-item fade-in">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">Crew Adoption Rate</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">$8,000+</div>
+                    <div class="stat-label">Average Monthly Savings</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">60</div>
+                    <div class="stat-label">Days to Transformation</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Hours Saved Weekly</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section" id="problem">
+        <div class="container">
+            <h3 class="section-title fade-in">The Hidden Cost</h3>
+            <h2 class="section-headline fade-in">Your Job Sites Are Leaking $105,000+ Annually While Your Competition Pulls Ahead</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">🔍</div>
+                    <h3 class="problem-title">Zero Visibility Across Job Sites</h3>
+                    <p>You're making critical decisions based on gut feelings and outdated information. Project managers spend 15-20 hours weekly just trying to gather basic productivity data, while problems fester unseen until they become emergencies.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">💸</div>
+                    <h3 class="problem-title">Budget Overruns Keep Happening</h3>
+                    <p>Every month brings another $8,750-$12,500 in unexpected costs from overtime, rework, and missed deadlines. You know something's wrong, but can't pinpoint exactly where the money is going or how to stop the bleeding.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">⏱️</div>
+                    <h3 class="problem-title">Constant Firefighting Mode</h3>
+                    <p>Your days are consumed by surprise problems requiring immediate attention. Instead of growing your business, you're stuck mediating crew disputes, explaining delays to angry clients, and manually tracking down information that should be at your fingertips.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">🏆</div>
+                    <h3 class="problem-title">Losing Bids to Competitors</h3>
+                    <p>Companies with better productivity tracking are underbidding you by 12-15% while maintaining higher profit margins. They're winning the premium projects because they can prove their reliability with actual performance data.</p>
+                </div>
+            </div>
+            
+            <div class="bridge-text fade-in">
+                But what if you could see exactly where productivity breaks down and fix it before it costs you thousands?
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section section-alt" id="solution">
+        <div class="container">
+            <h3 class="section-title fade-in">The Solution</h3>
+            <h2 class="section-headline fade-in">Turn Invisible Performance Issues into Measurable, Improvable Habits</h2>
+            <p class="section-description fade-in">ConstructTrack Pro doesn't just track outcomes—it identifies and optimizes the specific daily habits that drive productivity across all your job sites. Finally see what separates your high-performing crews from underperforming ones, with actionable data you can use immediately.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Real-Time Crew Performance Dashboard</h3>
+                    <p>Get instant visibility into productivity metrics across all job sites from any device. Compare crews, identify trends, and catch issues before they become costly problems.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Habit-Based Productivity System</h3>
+                    <p>Our proprietary system identifies the specific behaviors that drive success in your business. Transform vague productivity goals into concrete daily habits your crews can actually follow.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mobile-First Field Reporting</h3>
+                    <p>Designed for construction reality—works with gloves on, minimal typing required, functions offline, and syncs automatically when connection returns.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Custom KPI Development</h3>
+                    <p>We work with you to identify the metrics that truly matter for your specific projects and business goals. No more generic tracking that doesn't fit your operation.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title">Early Warning System</h3>
+                    <p>Receive alerts when productivity metrics start trending downward, giving you time to intervene before deadlines or budgets are affected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h3 class="section-title fade-in">What Our Clients Say</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">After 15 years in residential construction, I've tried every tracking system out there. ConstructTrack Pro is the first one my crews actually use without me having to nag them. We're saving $9,200 monthly on labor costs alone.</p>
+                    <div class="testimonial-author">Mike R.</div>
+                    <div class="testimonial-role">Project Manager, Westcoast Builders</div>
+                    <div class="testimonial-result">$9,200 monthly savings</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">I was skeptical about another tech solution, but my foremen love how simple it is. We identified three critical habits that were killing our productivity on commercial projects. Fixed those and now we're finishing 22% faster.</p>
+                    <div class="testimonial-author">Jennifer T.</div>
+                    <div class="testimonial-role">Operations Director, Summit Construction</div>
+                    <div class="testimonial-result">22% faster project completion</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">The visibility alone is worth the investment. I can finally see which crews are performing and why, instead of guessing. Helped us win a $1.2M contract because we could prove our productivity metrics during the bid.</p>
+                    <div class="testimonial-author">David M.</div>
+                    <div class="testimonial-role">Owner, Precision Contractors</div>
+                    <div class="testimonial-result">Won $1.2M contract</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-alt" id="pricing">
+        <div class="container">
+            <h3 class="section-title fade-in">Investment Options</h3>
+            <h2 class="section-headline fade-in">Stop Hemorrhaging $8,750+ Monthly with Our Guaranteed Solutions</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-name">Foundation Tracker</h3>
+                    <div class="pricing-price">$4,997</div>
+                    <span class="pricing-period">one-time</span>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Custom habit tracking system setup</li>
+                        <li class="pricing-feature">Initial crew performance metrics dashboard</li>
+                        <li class="pricing-feature">One-time training for all managers (up to 5)</li>
+                        <li class="pricing-feature">60-day implementation support</li>
+                        <li class="pricing-feature">Basic data migration from existing systems</li>
+                        <li class="pricing-feature">PDF handbook for ongoing system management</li>
+                    </ul>
+                    <a href="#lead-form" class="btn btn-secondary btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card highlighted fade-in">
+                    <h3 class="pricing-name">Productivity Pro</h3>
+                    <div class="pricing-price">$499</div>
+                    <span class="pricing-period">/month</span>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Everything in Foundation Tracker</li>
+                        <li class="pricing-feature">Unlimited user accounts</li>
+                        <li class="pricing-feature">Monthly performance analytics reports</li>
+                        <li class="pricing-feature">Quarterly optimization consultations</li>
+                        <li class="pricing-feature">Ongoing crew training sessions</li>
+                        <li class="pricing-feature">New feature access</li>
+                        <li class="pricing-feature">Priority technical support</li>
+                        <li class="pricing-feature">Mobile app access for field managers</li>
+                    </ul>
+                    <a href="#lead-form" class="btn btn-primary btn-block">Best Value</a>
+                </div>
+                
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-name">Performance Partner</h3>
+                    <div class="pricing-price">$799</div>
+                    <span class="pricing-period">/month + 10% of verified savings above $10,000/month</span>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Everything in Productivity Pro</li>
+                        <li class="pricing-feature">Dedicated account manager</li>
+                        <li class="pricing-feature">Weekly progress reviews</li>
+                        <li class="pricing-feature">Custom KPI development</li>
+                        <li class="pricing-feature">Advanced analytics and forecasting</li>
+                        <li class="pricing-feature">Integration with existing project management tools</li>
+                        <li class="pricing-feature">Crew incentive program design</li>
+                        <li class="pricing-feature">Guaranteed minimum 5% productivity improvement</li>
+                    </ul>
+                    <a href="#lead-form" class="btn btn-secondary btn-block">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="section" id="guarantee">
+        <div class="container">
+            <div class="guarantee-card fade-in">
+                <div class="guarantee-badge">60-Day $5,000 Savings Guarantee</div>
+                <div class="guarantee-icon">🛡️</div>
+                <h2>60-Day Budget Recovery Guarantee: Save At Least $5,000 Or Pay Nothing</h2>
+                <p>We're so confident in our system's ability to transform your productivity that we offer this simple guarantee: If you don't document at least $5,000 in saved costs within 60 days of implementation, you'll receive a full refund of your subscription fees with no questions asked. All we ask is that you follow our proven implementation process and use the system consistently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h3 class="section-title fade-in">FAQ</h3>
+            <h2 class="section-headline fade-in">Common Questions from Construction Professionals</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How long does it take to implement ConstructTrack Pro?</div>
+                    <div class="faq-answer">
+                        <p>Most construction companies are fully operational within 2-3 weeks. Our implementation team handles the heavy lifting, including system setup, initial data migration, and crew training. You'll start seeing valuable data in the first week, with complete visibility across all job sites by week three.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">My crews won't adopt another tech system. How is yours different?</div>
+                    <div class="faq-answer">
+                        <p>We built ConstructTrack with input from actual trade workers. It uses simple interfaces that work with gloves on, requires minimal typing, and focuses on the metrics that matter to both management and crews. Our onboarding process has achieved 92% adoption rates across crews of all ages and tech comfort levels. Plus, our 30-Day Crew Adoption Assurance guarantees successful implementation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">We can't afford another monthly expense right now. How do I justify this?</div>
+                    <div class="faq-answer">
+                        <p>That's exactly why you need ConstructTrack Pro. Your company is currently losing $8,750-$12,500 every month to productivity issues that our system directly addresses. With our 60-Day Budget Recovery Guarantee, you'll save at least $5,000 in the first two months or pay nothing. Most clients see positive ROI within the first 30 days.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">We already track productivity with our existing systems. What makes this different?</div>
+                    <div class="faq-answer">
+                        <p>Most construction companies track outcomes (like project completion), but not the daily habits that drive those outcomes. ConstructTrack Pro identifies the specific behaviors that separate your high-performing crews from underperforming ones, giving you actionable insights to replicate success. Our clients typically discover 5-7 critical habits they never knew were affecting productivity.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How does the guarantee work? What if we don't see the promised savings?</div>
+                    <div class="faq-answer">
+                        <p>Our 60-Day Budget Recovery Guarantee is simple: if you don't document at least $5,000 in saved costs from improved productivity tracking within 60 days, you'll receive a full refund with no questions asked. We only ask that you follow our implementation protocols, complete crew training, and utilize the system daily for at least 45 of the 60 days. Savings are calculated based on documented reduction in labor overruns, material waste, and schedule delays compared to your 3-month pre-implementation baseline.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Does this integrate with our existing construction management software?</div>
+                    <div class="faq-answer">
+                        <p>Yes. ConstructTrack Pro integrates with most popular construction management platforms including Procore, Buildertrend, CoConstruct, and more. We also offer custom API integrations for proprietary systems. During implementation, we'll assess your current tech stack and ensure seamless data flow between systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section final-cta" id="final-cta">
+        <div class="container">
+            <div class="final-cta-content fade-in">
+                <h2>Every Week Without ConstructTrack Pro Costs You $2,000+</h2>
+                <p>Take your frustrating job site visibility gaps causing $10K monthly overruns to complete crew performance transparency saving $8K per month in just 60 days</p>
+                <a href="#lead-form" class="btn btn-primary btn-lg">
+                    Schedule Your Demo
+                    <span class="btn-subtext">Backed by our 60-Day Budget Recovery Guarantee</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Construct<span>Track</span> Pro</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 ConstructTrack Pro. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
