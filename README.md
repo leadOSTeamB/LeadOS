@@ -2,4 +2,8 @@
 
 Auto-generated landing pages deployed via Vercel.
 
-Powered by LeadOS Funnel Builder Agent.
+Each landing page lives in `/landing/{slug}/index.html` and is accessible at `https://leados-pi.vercel.app/landing/{slug}`.
+
+## API
+
+- `POST /api/lead` — Lead capture endpoint that forwards form submissions to the LeadOS CRM.
