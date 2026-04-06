@@ -857,55 +857,13 @@
                     <div class="form-card card">
                         <h3 class="form-title">Get Started Today</h3>
                         <form id="lead-form">
-                            <input type="hidden" name="hubspotCompanyId" value="">
-                            <input type="hidden" name="landingPage" value="/landing/lead-generation-service">
-                            <input type="hidden" name="source" value="landing-page">
-                            
-                            <div class="form-group">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your first name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">Work Email</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="you@company.com" required>
-                                <small class="form-help">We'll send your consultation details here</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567">
-                                <small class="form-help">For text confirmations only</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="company" class="form-label">Company Name</label>
-                                <input type="text" id="company" name="company" class="form-control" placeholder="Your company" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="jobTitle" class="form-label">Job Title</label>
-                                <input type="text" id="jobTitle" name="jobTitle" class="form-control" placeholder="Your role">
-                                <small class="form-help">Helps us tailor our consultation to your needs</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="leadSource" class="form-label">How did you hear about us?</label>
-                                <select id="leadSource" name="leadSource" class="form-control form-select">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Google">Google</option>
-                                    <option value="LinkedIn">LinkedIn</option>
-                                    <option value="Referral">Referral</option>
-                                    <option value="Social Media">Social Media</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-block">Schedule My Free Consultation</button>
-                            <span class="form-submit-subtext">No obligation, cancel anytime</span>
-                            
-                            <p class="form-privacy">We respect your privacy. Your information will never be sold or shared with third parties.</p>
-                        </form>
+<div><label class="block text-sm font-medium mb-1.5" style="color:#374151;">Name</label>
+<input type="text" name="name" class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background:#F9FAFB;border:1px solid #D1D5DB;border-radius:12px;color:#1F2937;" placeholder="Enter your name"/></div>
+<div><label class="block text-sm font-medium mb-1.5" style="color:#374151;">Email *</label>
+<input type="email" name="email" required class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background:#F9FAFB;border:1px solid #D1D5DB;border-radius:12px;color:#1F2937;" placeholder="Enter your email"/></div>
+<div><label class="block text-sm font-medium mb-1.5" style="color:#374151;">Phone</label>
+<input type="tel" name="phone" class="w-full px-4 py-3 text-base transition-all duration-200 focus:outline-none focus:ring-2" style="background:#F9FAFB;border:1px solid #D1D5DB;border-radius:12px;color:#1F2937;" placeholder="Enter your phone"/></div>
+<div class="pt-2"><button type="submit" class="w-full px-6 py-3.5 text-white font-semibold text-lg">Get Started</button></div></form>
                         
                         <div id="calendly-section">
                             <div class="calendly-inline-widget" data-url="https://calendly.com/your-team/consultation" style="min-width:320px;height:630px;"></div>
