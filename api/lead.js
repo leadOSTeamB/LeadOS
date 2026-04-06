@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     const firstName = lead.firstName || lead.name || "";
     const lastName = lead.lastName || "";
 
-    // 1. Save to Supabase (only columns that exist in the Lead table)
+    // 1. Save to Supabase — only valid columns, let DB defaults handle enums
     const supabaseRes = await fetch(supabaseUrl + "/rest/v1/Lead", {
       method: "POST",
       headers: {
@@ -29,9 +29,6 @@ export default async function handler(req, res) {
         company: lead.company || null,
         phone: lead.phone || null,
         source: lead.source || "landing-page",
-        segment: "NEW",
-        score: 0,
-        stage: "NEW",
         updatedAt: new Date().toISOString(),
       }),
     });
@@ -47,7 +44,6 @@ export default async function handler(req, res) {
     let hubspotContactId = null;
     if (hubspotToken && lead.email) {
       try {
-        // Search existing
         const searchRes = await fetch("https://api.hubapi.com/crm/v3/objects/contacts/search", {
           method: "POST",
           headers: { Authorization: "Bearer " + hubspotToken, "Content-Type": "application/json" },
@@ -67,7 +63,6 @@ export default async function handler(req, res) {
             });
           }
         }
-        // Create if not found
         if (!hubspotContactId) {
           const cr = await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
             method: "POST",
