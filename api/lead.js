@@ -7,11 +7,12 @@ export default async function handler(req, res) {
     const supabaseUrl = "https://gepqxzditulkounsdcly.supabase.co";
     const supabaseKey = "sb_publishable_QN45BlmC-n5n6LeklHZBaA_sTeUhoZf";
     const hubspotToken = process.env.HUBSPOT_TOKEN || "";
-    const leadId = "lead-" + Date.now() + "-" + Math.random().toString(36).slice(2, 8);
-    const firstName = lead.firstName || (lead.name ? lead.name.split(" ")[0] : "");
-    const lastName = lead.lastName || (lead.name ? lead.name.split(" ").slice(1).join(" ") : "");
 
-    // 1. Save to Supabase
+    const leadId = "lead-" + Date.now() + "-" + Math.random().toString(36).slice(2, 8);
+    const firstName = lead.firstName || lead.name || "";
+    const lastName = lead.lastName || "";
+
+    // 1. Save to Supabase (only columns that exist in the Lead table)
     const supabaseRes = await fetch(supabaseUrl + "/rest/v1/Lead", {
       method: "POST",
       headers: {
@@ -21,12 +22,16 @@ export default async function handler(req, res) {
         Prefer: "return=representation",
       },
       body: JSON.stringify({
-        id: leadId, email: lead.email || "", firstName, lastName,
-        company: lead.company || "", phone: lead.phone || "",
+        id: leadId,
+        email: lead.email || "",
+        firstName: firstName,
+        lastName: lastName,
+        company: lead.company || null,
+        phone: lead.phone || null,
         source: lead.source || "landing-page",
-        landingPage: lead.landingPage || "",
-        segment: "NEW", score: 0, stage: "NEW", metadata: lead,
-        createdAt: new Date().toISOString(),
+        segment: "NEW",
+        score: 0,
+        stage: "NEW",
         updatedAt: new Date().toISOString(),
       }),
     });
@@ -34,14 +39,15 @@ export default async function handler(req, res) {
     if (!supabaseRes.ok) {
       const err = await supabaseRes.text();
       console.error("Supabase error:", err);
-      return res.status(500).json({ error: "Failed to save lead" });
+      return res.status(500).json({ error: "Failed to save lead", detail: err });
     }
     const saved = await supabaseRes.json();
 
-    // 2. Push to HubSpot CRM (only standard properties)
+    // 2. Push to HubSpot CRM
     let hubspotContactId = null;
     if (hubspotToken && lead.email) {
       try {
+        // Search existing
         const searchRes = await fetch("https://api.hubapi.com/crm/v3/objects/contacts/search", {
           method: "POST",
           headers: { Authorization: "Bearer " + hubspotToken, "Content-Type": "application/json" },
@@ -61,6 +67,7 @@ export default async function handler(req, res) {
             });
           }
         }
+        // Create if not found
         if (!hubspotContactId) {
           const cr = await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
             method: "POST",
