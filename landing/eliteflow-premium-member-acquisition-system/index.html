@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate 30-50 Premium Fitness Members Monthly | EliteFlow System</title>
+  <meta name="description" content="Book a strategy call to secure 30+ qualified $200-500/month membership prospects in 60 days — guaranteed or pay nothing. Exclusive for executive clubs.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --primary-dark: #1d4ed8;
+      --primary-light: #60a5fa;
+      --primary-glow: rgba(59,130,246,0.15);
+      --primary-glow-strong: rgba(59,130,246,0.3);
+      --bg: #030712;
+      --bg-card: rgba(15,23,42,0.6);
+      --bg-section-alt: #0f172a;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border: rgba(148,163,184,0.08);
+      --border-hover: rgba(148,163,184,0.15);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --success: #10b981;
+      --success-dark: #059669;
+      --success-glow: rgba(16,185,129,0.15);
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--primary-light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-alt {
+      background-color: var(--bg-section-alt);
+    }
+
+    .section-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--primary-glow-strong);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--border-hover);
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-5px);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.5rem 0;
+      transition: all 0.3s ease;
+    }
+
+    nav.scrolled {
+      background-color: rgba(3, 7, 18, 0.8);
+      backdrop-filter: blur(12px);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--text);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 150px 0 100px;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-orb {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--primary-glow-strong) 0%, rgba(59,130,246,0.05) 50%, rgba(59,130,246,0) 70%);
+      border-radius: 50%;
+      top: -100px;
+      right: -200px;
+      z-index: 1;
+      animation: float 8s ease-in-out infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+      50% {
+        transform: translate(-30px, 30px) scale(1.05);
+      }
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+    }
+
+    .hero-subheadline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 700px;
+    }
+
+    .hero-cta-subtext {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      margin-top: 0.75rem;
+    }
+
+    .trust-badge {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .trust-badge svg {
+      color: var(--primary);
+    }
+
+    /* Social Proof Bar */
+    .social-proof-bar {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 1px;
+      background-color: var(--border);
+    }
+
+    .stat-number {
+      font-family: var(--font-mono);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Problem Section */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .problem-card {
+      padding: 2.5rem;
+    }
+
+    .problem-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    .problem-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .bridge-text {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--primary-light);
+    }
+
+    /* Solution Section */
+    .steps-container {
+      margin-top: 3rem;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--primary-glow);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .step-content h3 {
+      margin-bottom: 0.75rem;
+    }
+
+    /* Benefits Section */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .benefit-card {
+      padding: 2.5rem;
+    }
+
+    .benefit-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    .benefit-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    /* Testimonials Section */
+    .testimonials-container {
+      margin-top: 3rem;
+    }
+
+    .testimonial-card {
+      padding: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .testimonial-quote {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-quote::before {
+      content: """;
+      position: absolute;
+      left: -1rem;
+      top: -1.5rem;
+      font-size: 5rem;
+      color: var(--primary-glow-strong);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .testimonial-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+
+    .testimonial-info h4 {
+      margin-bottom: 0.25rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonial-result {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .testimonial-stars {
+      color: #f59e0b;
+      margin-top: 0.5rem;
+    }
+
+    /* Differentiation Section */
+    .comparison-table {
+      width: 100%;
+      margin-top: 3rem;
+      border-collapse: collapse;
+    }
+
+    .comparison-table th {
+      text-align: left;
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.25rem;
+      color: var(--text);
+    }
+
+    .comparison-table td {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-traditional {
+      color: var(--text-dim);
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .comparison-traditional::before {
+      content: "✕";
+      position: absolute;
+      left: 0;
+      color: #ef4444;
+    }
+
+    .comparison-ours {
+      color: var(--text);
+      position: relative;
+      padding-left: 2rem;
+      font-weight: 500;
+    }
+
+    .comparison-ours::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+    }
+
+    /* Pricing Section */
+    .pricing-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .pricing-card {
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-card.highlighted {
+      border: 1px solid var(--primary);
+      box-shadow: 0 0 30px var(--primary-glow);
+      position: relative;
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .pricing-name {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+      color: var(--text);
+    }
+
+    .pricing-period {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .pricing-features li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .pricing-features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    /* Guarantee Section */
+    .guarantee-card {
+      background: rgba(16,185,129,0.05);
+      border: 1px solid rgba(16,185,129,0.2);
+      padding: 3rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .guarantee-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .guarantee-badge {
+      display: inline-block;
+      background: var(--success-glow);
+      color: var(--success);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: var(--text);
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 1.5rem;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.open .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      padding-right: 2rem;
+      color: var(--text-muted);
+    }
+
+    .faq-answer p {
+      padding-bottom: 1.5rem;
+    }
+
+    /* Final CTA Section */
+    .final-cta {
+      background: linear-gradient(to bottom right, var(--bg-section-alt), var(--bg));
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta-subheadline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .footer-logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--text);
+    }
+
+    .footer-logo span {
+      color: var(--primary);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .footer-link {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--text-dim);
+      font-size: 0.875rem;
+    }
+
+    /* Form Styles */
+    .form-section {
+      padding: 100px 0;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-card {
+      padding: 3rem;
+    }
+
+    .form-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .form-subtext {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-glow);
+    }
+
+    .form-input::placeholder {
+      color: var(--text-dim);
+    }
+
+    .form-help-text {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+    }
+
+    .form-submit {
+      width: 100%;
+    }
+
+    .form-submit-subtext {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+    }
+
+    .form-privacy {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .hero {
+        padding: 120px 0 70px;
+      }
+
+      .hero-orb {
+        width: 300px;
+        height: 300px;
+        right: -150px;
+        top: -50px;
+      }
+
+      .stats-container {
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .stat-item:not(:last-child)::after {
+        display: none;
+      }
+
+      .step-item {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .comparison-table th, 
+      .comparison-table td {
+        padding: 1rem;
+      }
+
+      .pricing-container {
+        gap: 3rem;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+
+    /* Calendly Section */
+    #calendly-section {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">Elite<span>Flow</span></a>
+      <a href="#form-section" class="btn btn-primary">Book Strategy Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Generate 30-50 High-Value Membership Prospects Every Month — Guaranteed</h1>
+        <p class="hero-subheadline">Transform your executive health club's growth with qualified $200-500+ monthly membership leads or pay nothing. Built exclusively for premium fitness facilities.</p>
+        <a href="#form-section" class="btn btn-primary btn-lg">Book Your Member Acquisition Strategy Call</a>
+        <p class="hero-cta-subtext">30-minute call. No obligation. 100% confidential discussion.</p>
+        <div class="trust-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Trusted by 42+ executive clubs across 17 metropolitan markets</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-orb"></div>
+  </section>
+
+  <!-- Social Proof Bar -->
+  <section class="social-proof-bar fade-in">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">94%</div>
+          <div class="stat-label">Implementation Success Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15%+</div>
+          <div class="stat-label">Lead-to-Member Conversion</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$4,200</div>
+          <div class="stat-label">Avg. Annual Member Value</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-title">THE CHALLENGE</div>
+      <h2>When Your Club's Growth Depends on Finding the Right Members, Not Just More Members</h2>
+      <div class="problem-grid">
+        <div class="card problem-card">
+          <div class="problem-icon">🎯</div>
+          <h3 class="problem-title">Wasting time and budget on unqualified leads that never convert</h3>
+          <p>Every tour with someone who can't afford your premium memberships costs your team valuable time and energy. You're left explaining missed targets to ownership while your sales team grows increasingly frustrated.</p>
+        </div>
+        <div class="card problem-card">
+          <div class="problem-icon">📉</div>
+          <h3 class="problem-title">Seasonal fluctuations creating revenue instability and stress</h3>
+          <p>One month you're hitting targets, the next you're scrambling to fill the pipeline. This unpredictability makes staffing, budgeting, and facility improvements nearly impossible to plan, leaving you constantly in reactive mode.</p>
+        </div>
+        <div class="card problem-card">
+          <div class="problem-icon">💰</div>
+          <h3 class="problem-title">Competitors capturing the limited pool of high-value prospects</h3>
+          <p>Every premium prospect who joins a competitor typically stays for 3.2 years and represents $10,000-$25,000 in lifetime value. Each month of inaction means permanently surrendering market share in your area.</p>
+        </div>
+        <div class="card problem-card">
+          <div class="problem-icon">⏱️</div>
+          <h3 class="problem-title">Spending 15-25 hours weekly on ineffective marketing campaigns</h3>
+          <p>Your time is too valuable to waste on managing underperforming ads, following up with poor-fit prospects, and explaining missed targets. This prevents you from focusing on member experience and retention strategies that drive real growth.</p>
+        </div>
+      </div>
+      <p class="bridge-text">There's a proven, predictable way to fill your pipeline with exactly the right prospects...</p>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <div class="section-title">THE SOLUTION</div>
+      <h2>EliteFlow: Your Premium Member Acquisition System</h2>
+      <div class="steps-container">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Strategy & Targeting</h3>
+            <p>We develop your custom acquisition blueprint based on your ideal member profile, membership pricing, and facility amenities. Our proprietary targeting system identifies prospects with $150K+ incomes who are actively interested in premium fitness experiences.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Campaign Deployment</h3>
+            <p>Within 14 days, your custom campaigns go live across multiple channels, using messaging that resonates specifically with executive-level prospects. Our system automatically filters out unqualified leads before they reach your sales team.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Lead Delivery & Qualification</h3>
+            <p>Your team receives 30-50 pre-qualified prospects monthly who match your ideal member profile. Each lead includes detailed information on income level, fitness interests, and preferred contact method for maximum conversion potential.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Optimization & Scaling</h3>
+            <p>We continuously refine your campaigns based on which prospects convert to members, increasing quality while maintaining volume. Your dedicated account manager provides weekly performance updates and quarterly strategy sessions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-title">WHAT YOU GET</div>
+      <h2>Transform Your Membership Pipeline in 60 Days</h2>
+      <div class="benefits-grid">
+        <div class="card benefit-card">
+          <div class="benefit-icon">🔍</div>
+          <h3 class="benefit-title">30-50 Pre-Qualified High-Value Prospects Monthly</h3>
+          <p>Receive a consistent flow of prospects who can afford $200-500+ monthly memberships, pre-screened for interest in premium fitness experiences and financial qualification.</p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3 class="benefit-title">15%+ Conversion Rate Support System</h3>
+          <p>Our proven follow-up protocols help your team convert at least 15% of delivered prospects into paying members, generating $30,000-$75,000 in potential monthly membership revenue.</p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">60-Day Implementation & Results</h3>
+          <p>Full system deployment within 14 days and your first 30+ qualified prospects delivered within 60 days, guaranteed. No more waiting months to see if a marketing strategy works.</p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3 class="benefit-title">Double Performance Guarantee</h3>
+          <p>30 qualified prospects in 60 days or you pay nothing, plus our 15% conversion support guarantee. We've removed all risk so you can implement with complete confidence.</p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-icon">🔄</div>
+          <h3 class="benefit-title">Predictable Growth Model</h3>
+          <p>Finally escape the feast-or-famine cycle with a systematic approach that delivers consistent results regardless of season, market conditions, or staff changes.</p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-icon">💼</div>
+          <h3 class="benefit-title">Executive Club Specialization</h3>
+          <p>Unlike general marketing agencies, we work exclusively with premium fitness facilities. Our campaigns specifically attract prospects who value premium amenities and personalized service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form-section" class="section section-alt form-section fade-in">
+    <div class="container">
+      <div class="form-container">
+        <div class="card form-card">
+          <h3 class="form-headline">Discover How to Attract 30+ Premium Members ($200-500/mo) in the Next 90 Days</h3>
+          <p class="form-subtext">Book your Executive Member Acquisition Strategy Call (15 minutes, zero obligation)</p>
+          <form id="lead-form">
+            <input type="hidden" name="hubspotCompanyId" value="">
+            <input type="hidden" name="landingPage" value="/landing/eliteflow-premium-member-acquisition-system">
+            <input type="hidden" name="source" value="landing-page">
+            
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Smith" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Work Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@premiumfitnessclub.com" required>
+              <div class="form-help-text">We'll send your calendar invite here</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 123-4567" required>
+              <div class="form-help-text">For call confirmation only</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="clubName" class="form-label">Club Name</label>
+              <input type="text" id="clubName" name="clubName" class="form-input" placeholder="Prestige Athletic Club" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-submit">Schedule My Strategy Call</button>
+            <div class="form-submit-subtext">No pressure, no sales tactics</div>
+            
+            <div class="form-privacy">We respect your privacy. Your information will never be shared or sold.</div>
+          </form>
+          <div id="calendly-section" style="display:none;margin-top:2rem">
+            <iframe src="https://calendly.com/your-team/consultation?embed_type=inline" width="100%" height="700" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-title">RESULTS</div>
+      <h2>What Membership Directors Are Saying</h2>
+      <div class="testimonials-container">
+        <div class="card testimonial-card">
+          <div class="testimonial-quote">
+            <p>After struggling to meet targets for 3 consecutive quarters, EliteFlow delivered 42 qualified prospects in our first 60 days. 16 converted to our Executive tier ($350/month), instantly adding $67,200 in annual recurring revenue.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MB</div>
+            <div class="testimonial-info">
+              <h4>Michael Brennan</h4>
+              <div class="testimonial-role">Membership Director, Apex Athletic Club</div>
+              <div class="testimonial-result">$67,200 in new annual revenue in 60 days</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-quote">
+            <p>The quality difference is night and day. Before EliteFlow, we'd get 100+ inquiries but only 3-4 qualified prospects. Now we receive 30-40 highly qualified leads monthly, and my team isn't wasting time on tours for people who can't afford our memberships.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SW</div>
+            <div class="testimonial-info">
+              <h4>Sarah Westfield</h4>
+              <div class="testimonial-role">Membership Director, Executive Fitness Collective</div>
+              <div class="testimonial-result">Conversion rate increased from 8% to 22%</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="card testimonial-card">
+          <div class="testimonial-quote">
+            <p>When we opened our second location, we needed to build membership quickly without sacrificing quality. EliteFlow delivered 137 qualified prospects in our first 90 days, helping us reach 65% capacity three months ahead of projections.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DC</div>
+            <div class="testimonial-info">
+              <h4>David Chen</h4>
+              <div class="testimonial-role">Operations Director, Prestige Health Club</div>
+              <div class="testimonial-result">Reached 65% capacity 3 months ahead of schedule</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentiation Section -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <div class="section-title">WHY ELITEFLOW</div>
+      <h2>Why Executive Clubs Choose Our Acquisition System</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Traditional Approach</th>
+            <th>The EliteFlow Difference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="comparison-traditional">Generic marketing agencies that work with budget gyms, restaurants, and retail stores</td>
+            <td class="comparison-ours">100% specialized in executive health clubs with deep understanding of the premium fitness market</td>
+          </tr>
+          <tr>
+            <td class="comparison-traditional">Mass-market lead generation delivering high volume but low quality prospects</td>
+            <td class="comparison-ours">Precision targeting system that pre-qualifies based on income ($150K+) and interest in premium fitness</td>
+          </tr>
+          <tr>
+            <td class="comparison-traditional">Pay regardless of results with 6-12 month contracts</td>
+            <td class="comparison-ours">30 qualified prospects guarantee or you pay nothing, plus 15% conversion support guarantee</td>
+          </tr>
+          <tr>
+            <td class="comparison-traditional">Slow implementation taking 60-90 days before seeing first results</td>
+            <td class="comparison-ours">Rapid 14-day deployment with first qualified prospects delivered within 21-30 days</td>
+          </tr>
+          <tr>
+            <td class="comparison-traditional">Generic fitness marketing templates and messaging</td>
+            <td class="comparison-ours">Executive-focused campaigns highlighting exclusivity, time efficiency, and premium amenities</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-title">INVESTMENT</div>
+      <h2>Choose Your Membership Growth Path</h2>
+      <div class="pricing-container">
+        <div class="card pricing-card">
+          <h3 class="pricing-name">Jumpstart</h3>
+          <div class="pricing-price">$4,997</div>
+          <div class="pricing-period">one-time</div>
+          <ul class="pricing-features">
+            <li>Comprehensive acquisition strategy</li>
+            <li>Audience targeting blueprint</li>
+            <li>60-day campaign setup</li>
+            <li>Lead capture system implementation</li>
+            <li>Staff training on lead qualification</li>
+            <li>30 days of post-implementation support</li>
+            <li>30 qualified prospects guarantee</li>
+          </ul>
+          <a href="#form-section" class="btn btn-primary">Book Strategy Call</a>
+        </div>
+        <div class="card pricing-card highlighted">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-name">Growth Engine</h3>
+          <div class="pricing-price">$3,997</div>
+          <div class="pricing-period">/month (3-month minimum)</div>
+          <ul class="pricing-features">
+            <li>Ongoing campaign management</li>
+            <li>30-50 qualified prospects monthly</li>
+            <li>Weekly performance reporting</li>
+            <li>A/B testing of messaging and offers</li>
+            <li>Competitor monitoring</li>
+            <li>Monthly strategy consultation</li>
+            <li>Lead nurturing sequence development</li>
+            <li>Both performance guarantees included</li>
+          </ul>
+          <a href="#form-section" class="btn btn-primary">Book Strategy Call</a>
+        </div>
+        <div class="card pricing-card">
+          <h3 class="pricing-name">Elite Performance</h3>
+          <div class="pricing-price">$2,997</div>
+          <div class="pricing-period">/month + $200 per converted member</div>
+          <ul class="pricing-features">
+            <li>All Growth Engine features</li>
+            <li>Enhanced targeting for $350+ prospects</li>
+            <li>VIP prospect nurturing system</li>
+            <li>Dedicated account strategist</li>
+            <li>Quarterly business growth planning</li>
+            <li>Membership retention strategies</li>
+            <li>Member referral system implementation</li>
+            <li>Priority support and campaign adjustments</li>
+          </ul>
+          <a href="#form-section" class="btn btn-primary">Book Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <div class="guarantee-card">
+        <div class="guarantee-icon">🛡️</div>
+        <div class="guarantee-badge">60-Day Performance Guarantee</div>
+        <h2>30 Qualified Prospects Guarantee or You Pay Nothing</h2>
+        <p>If we fail to deliver at least 30 qualified prospects who meet your ideal member profile (annual income $150K+, interest in premium fitness services) within 60 days, you receive a 100% refund of your investment. Plus, our 15% Conversion Rate Support Guarantee ensures your team has the tools to convert these prospects to members.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-title">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">How is this different from other marketing agencies we've tried?</div>
+          <div class="faq-answer">
+            <p>Unlike general agencies, we work exclusively with executive health clubs across 17 metropolitan markets. Our system is specifically designed to attract prospects who can afford $200-500+ monthly memberships, with campaigns that emphasize exclusivity and premium amenities. We also offer a performance guarantee that traditional agencies don't: 30 qualified prospects in 60 days or you pay nothing.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What makes a prospect 'qualified' under your guarantee?</div>
+          <div class="faq-answer">
+            <p>A qualified prospect meets three specific criteria: 1) verified $150K+ annual income, 2) explicit interest in premium fitness memberships, and 3) complete contact information for follow-up. This ensures your sales team only spends time with prospects who can
